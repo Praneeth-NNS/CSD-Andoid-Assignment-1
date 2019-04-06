@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlitemView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/ivicon"
+        android:layout_width="@dimen/icon_size"
+        android:layout_height="@dimen/icon_size"
+        android:layout_marginLeft="@dimen/view_small_margin"
+        android:layout_marginTop="@dimen/view_small_margin"
+        android:src="@drawable/twitter" />
+
+    <TextView
+        android:id="@+id/tvtitle"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="@dimen/view_small_margin"
+        android:layout_marginTop="@dimen/view_small_margin"
+        android:layout_toEndOf="@+id/ivicon"
+        android:fontFamily="@font/montserrat_medium"
+        android:maxLength="20"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="28dp"
+        tools:text="captian america" />
+
+    <TextView
+        android:id="@+id/tvsubTitle"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_below="@id/tvtitle"
+        android:layout_marginLeft="@dimen/view_small_margin"
+        android:layout_marginTop="@dimen/view_small_margin"
+        android:layout_toEndOf="@+id/ivicon"
+        android:fontFamily="@font/montserrat_medium"
+        android:maxLines="2"
+        android:textColor="@color/primaryTextColor"
+        tools:text="captian america subtitle" />
+</RelativeLayout>
